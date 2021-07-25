@@ -1,0 +1,19 @@
+/*MANIFIESTO*/
+
+//abstacts
+@import 'abstracts/variables';
+//vendors
+@import 'vendors/bootstrap460/bootstrap';
+//base
+@import 'base/base';
+@import 'base/reset';
+@import 'base/typography';
+//layout
+@import 'layout/footer';
+@import 'layout/header';
+@import 'layout/main';
+@import 'layout/navbar';
+//components
+@import 'components/buttons';
+@import 'components/navigations';
+@import 'components/thumbnails';
