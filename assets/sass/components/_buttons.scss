@@ -1,6 +1,28 @@
 /*buttons*/
 
 //main button
-.main__button {
-    color: red;
+.btn {
+    background-color: $nickel;
+    border-radius: 25px;
+    font-family: $roboto;
+    font-size: $regular;
+    color: $white;
+    &:hover {
+        background-color: $light-gray;
+        color: $white;
+    }
+    &:focus {
+        background-color: $nickel;
+        border: 3px;
+        border-style: solid;
+        border-color: $light-gray;
+    }
+}
+
+.btn_normal {
+    max-width: $btn-large;
+}
+
+.btn_small {
+    max-width: $btn-small;
 }
