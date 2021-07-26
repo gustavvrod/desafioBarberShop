@@ -1,20 +1,28 @@
 /*links*/
 
-//esquema de colores
+//esquema de colores seccion autor
 .autor-name {
     font-family: $playfair;
     font-weight: $bold;
     font-style: $italic;
 }
 
+//color para informacion relacionada a la autora
 .autor-rrss,
 .autor-link {
     color: $ruddy-pink;
 }
 
+//estilo para parrafo autor
 .autor-text {
     font-family: $roboto;
     font-weight: $regular;
     font-size: $small;
     text-align: left;
+}
+
+@media screen and (max-width: 576px) {
+    .autor-container {
+        padding: 0 25%;
+    }
 }

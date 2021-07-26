@@ -9931,9 +9931,25 @@ h3 {
     border-color: #dee2e6;
   }
 }
-/*reset*/
+/* BASE: RESET */
 * {
   margin: 0;
+}
+
+header {
+  margin: 0px;
+  padding: 0;
+}
+
+/*tipografia base*/
+p {
+  color: #222323;
+}
+
+/*footer*/
+.footer-container img {
+  width: 122px;
+  padding: 30px 0px;
 }
 
 /*header*/
@@ -9941,7 +9957,7 @@ header {
   background-image: url("../img/post-image.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  width: 100vw;
   background-position: 50%;
 }
 
@@ -9958,14 +9974,20 @@ header {
   font-size: 70px;
   font-style: italic;
   color: #FFF;
+  max-width: 1200px;
 }
 
 .header-container_icon {
   color: #FFF;
   font-size: 30px;
-  padding-left: 40%;
+  padding-left: 49%;
 }
 
+@media screen and (max-width: 480px) {
+  .header-container__title {
+    font-size: 40px;
+  }
+}
 /*main section*/
 .main-container {
   display: flex;
@@ -9973,10 +9995,29 @@ header {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 16px;
-  color: #222323;
+}
+
+.autor-container {
+  display: flex;
+  justify-content: center;
+  margin: 100px 10px;
 }
 
 .parrafo-link {
+  color: #D76C69;
+}
+
+/*navbar*/
+nav {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.navbar-dark .navbar-nav .show > .nav-link,
+.navbar-dark .navbar-nav .active > .nav-link,
+.navbar-dark .navbar-nav .nav-link.show,
+.navbar-dark .navbar-nav .nav-link.active {
   color: #D76C69;
 }
 
@@ -10030,8 +10071,20 @@ main .btn {
   text-align: left;
 }
 
+@media screen and (max-width: 576px) {
+  .autor-container {
+    padding: 0 25%;
+  }
+}
 /*pagination*/
-/*pagination item*/
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  background-color: #D1D1D1;
+  margin-top: 2%;
+  padding: 20px 0px;
+}
+
 .page-item a {
   text-decoration: none;
   color: #121619;
@@ -10039,8 +10092,17 @@ main .btn {
   font-weight: 400;
   font-size: 16px;
 }
+.page-item a:hover {
+  background-color: #D1D1D1;
+  color: #FFF;
+}
+.page-item a:focus {
+  background-color: #6C6E70;
+  border: 3px;
+  border-style: solid;
+  border-color: #D1D1D1;
+}
 
-/*page active*/
 .page-item.active .page-link {
   background-color: #6C6E70;
   border-color: #6C6E70;

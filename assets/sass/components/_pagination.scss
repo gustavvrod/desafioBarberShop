@@ -1,19 +1,34 @@
 /*pagination*/
 
+//pagination container
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    background-color: $light-gray;
+    margin-top: 2%;
+    padding: 20px 0px;
+}
 
-/*pagination item*/
-
+//pagination item
 .page-item a {
     text-decoration: none;
     color: $eerie-black;
     font-family: $roboto;
     font-weight: $regular;
     font-size: $medium;
+    &:hover {
+        background-color: $light-gray;
+        color: $white;
+    }
+    &:focus {
+        background-color: $nickel;
+        border: 3px;
+        border-style: solid;
+        border-color: $light-gray;
+    }
 }
 
-
-/*page active*/
-
+//page active
 .page-item.active .page-link {
     background-color: $nickel;
     border-color: $nickel;

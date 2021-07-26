@@ -7,9 +7,16 @@
     font-family: $roboto;
     font-weight: $ligero;
     font-size: $medium;
-    color: $raisin-black;
 }
 
+//sección autor
+.autor-container {
+    display: flex;
+    justify-content: center;
+    margin: 100px 10px;
+}
+
+//a tag en parrafo
 .parrafo-link {
     color: $ruddy-pink;
 }
