@@ -1,13 +1,20 @@
 /*links*/
 
 //esquema de colores
-.autor__name {
+.autor-name {
     font-family: $playfair;
     font-weight: $bold;
     font-style: $italic;
 }
 
-.autor__rrss,
-.autor__link {
+.autor-rrss,
+.autor-link {
     color: $ruddy-pink;
+}
+
+.autor-text {
+    font-family: $roboto;
+    font-weight: $regular;
+    font-size: $small;
+    text-align: left;
 }

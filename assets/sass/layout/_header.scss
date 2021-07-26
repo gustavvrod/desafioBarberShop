@@ -7,3 +7,24 @@ header {
     height: 100vh;
     background-position: 50%;
 }
+
+.header-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-container__title {
+    font-family: $playfair;
+    font-weight: $bold;
+    font-size: $xx-large;
+    font-style: $italic;
+    color: $white;
+}
+
+.header-container_icon {
+    color: $white;
+    font-size: $x-large;
+    padding-left: 40%;
+}

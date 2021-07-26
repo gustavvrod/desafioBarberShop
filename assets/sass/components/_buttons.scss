@@ -1,6 +1,10 @@
 /*buttons*/
 
 //main button
+main .btn {
+    margin-left: $small;
+}
+
 .btn {
     background-color: $nickel;
     border-radius: 25px;
@@ -19,10 +23,10 @@
     }
 }
 
-.btn_normal {
+.btn__normal {
     max-width: $btn-large;
 }
 
-.btn_small {
+.btn__small {
     max-width: $btn-small;
 }

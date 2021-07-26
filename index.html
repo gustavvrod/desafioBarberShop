@@ -8,6 +8,10 @@
     <title>Barber Shop</title>
     <meta name="author" content="Gustavo Rodriguez">
     <meta name="description" content="Pagina web para tienda de barberia">
+    <!--font awesome 5.15.13-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <!--fonts playfair-display 900/400 y roboto 400/300-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,900&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
@@ -45,65 +49,72 @@
     </nav>
 
     <!--inicio header-->
-    <header class="header">
-        <div class="header__container">
-            <h1>5 formas de cuidar tu corte de cabello</h1>
+    <header id="header">
+        <div class="header-container row">
+            <div class="col-8">
+                <h1 class="header-container__title">5 formas de cuidar tu corte de cabello</h1>
+            </div>
+            <div class="col-6">
+                <a href="#main"><i class="header-container_icon fas fa-angle-double-down col-12"></i></a>
+            </div>
         </div>
+
     </header>
     <!--inicio main-->
-    <main class="main">
-        <div class="main__container">
-            <div class="main__container row">
-                <div class="main__container col-10">
-                    <p class="main-fecha">12 de abril de 2018</p>
-                    <p class="main-parrafo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam illo perferendis incidunt ut voluptatibus impedit commodi facilis quia autem, nisi, earum mollitia iusto officiis, quo id exercitationem. Iste, incidunt expedita!
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam illo perferendis incidunt ut voluptatibus impedit commodi facilis quia autem, nisi, earum mollitia iusto officiis, quo id exercitationem. Iste, incidunt expedita!
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam illo perferendis incidunt ut voluptatibus impedit commodi facilis quia autem, nisi, earum mollitia iusto officiis, quo id exercitationem. Iste, incidunt expedita!
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam illo perferendis incidunt ut voluptatibus impedit commodi facilis quia autem, nisi, earum mollitia iusto officiis, quo id exercitationem. Iste, incidunt expedita!
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam illo perferendis incidunt ut voluptatibus impedit commodi facilis quia autem, nisi, earum mollitia iusto officiis, quo id exercitationem. Iste, incidunt expedita!
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam illo perferendis incidunt ut voluptatibus impedit commodi facilis quia autem, nisi, earum mollitia iusto officiis, quo id exercitationem. Iste, incidunt expedita!
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam illo perferendis incidunt ut voluptatibus impedit commodi facilis quia autem, nisi, earum mollitia iusto officiis, quo id exercitationem. Iste, incidunt expedita!
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam illo perferendis incidunt ut voluptatibus impedit commodi facilis quia autem, nisi, earum mollitia iusto officiis, quo id exercitationem. Iste, incidunt expedita!</p>
-                </div>
+    <main id="main">
+        <div class="main-container row">
+            <div class="main-container col-10">
+                <p class="main-container__fecha">12 de abril de 2018</p>
             </div>
-            <div class="main__button">
-                <button type="button" class="btn">Secondary</button>
-                <button type="button" class="btn">Secondary</button>
+            <div class="main-container col-10">
+                <p class="main-container__parrafo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat nunc quam, eget scelerisque quam semper quis. Mauris maximus blandit lorem, sit amet condimentum eros auctor quis. In ut semper ipsum, nec condimentum est. Phasellus
+                    sodales, nunc vitae feugiat consequat, turpis velit euismod mi, eget scelerisque felis odio nec tortor. Ut nibh ex, tincidunt eu faucibus vel, sollicitudin ut velit. Fusce dapibus turpis massa, nec pellentesque libero porttitor eu.
+                    Fusce vel pellentesque augue. Cras finibus elit nec nisl vehicula, in interdum dolor volutpat. Duis arcu odio, aliquet non sapien vitae, scelerisque aliquam lorem. Suspendisse et sem tincidunt, tincidunt odio id, varius enim. Vestibulum
+                    faucibus augue id fringilla vulputate. Sed vitae magna eu enim pellentesque laoreet. Pellentesque id molestie eros. Nunc quam nisi, efficitur in scelerisque eu, lacinia vel erat. Suspendisse vel lobortis lectus, eu convallis mauris.
+                    Praesent id odio imperdiet, tincidunt ex a, aliquam libero. Duis ultricies nisi nulla, eget cursus nibh interdum tempus. Integer sodales tincidunt imperdiet. Aenean ornare at tortor sed facilisis. Nulla gravida turpis ac ullamcorper
+                    iaculis. Cras fringilla felis id nibh efficitur ornare. Aenean accumsan orci sit amet semper eleifend. Proin quis tortor ante. Cras fermentum urna a felis placerat, eget malesuada ipsum placerat. Fusce scelerisque, leo quis auctor
+                    lacinia, <a href="#" class="parrafo-link"> eget dictum nisi sapien eget ex.</a> Fusce in eros purus. Fusce volutpat nisi purus, ac vehicula ipsum sollicitudin in. Praesent ultrices semper massa, eu pellentesque purus vehicula non.
+                    Praesent tincidunt convallis ipsum, quis convallis metus. Vivamus ac gravida lectus, eget ultricies nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam tristique pulvinar est at tristique. Vestibulum non blandit
+                    ex. Suspendisse ipsum justo, feugiat eu feugiat et, condimentum sit amet ipsum. Pellentesque eu vulputate dolor. Aliquam pretium arcu nec aliquet varius.</p>
             </div>
+        </div>
+        <div class="main-container col-10">
+            <button type="button" class="btn">Compartir</button>
+            <button type="button" class="btn">Comentar en Twitter</button>
+        </div>
         </div>
 
         <!--seccion autor-->
         <section id="autor">
-            <div class="autor__container row">
-                <div class="autor__thumbnail col">
-                    <img src="assets\img\naomi-thai.png" alt="naomi" class="autor__thumbnail--normal">
+            <div class="autor-container row">
+                <div class="autor-thumbnail col">
+                    <img src="assets\img\naomi-thai.png" alt="naomi" class="autor-thumbnail__normal">
                 </div>
-                <div class="autor__item col">
-                    <h3 class="autor__name">Naomi Thai</h3>
-                    <h5 class="autor__rrss">@Naomi</h5>
-                    <h5 class="autor__link">depelos.com</h5>
+                <div class="autor-item col">
+                    <h3 class="autor-name">Naomi Thai</h3>
+                    <h5 class="autor-rrss">@Naomi</h5>
+                    <h5 class="autor-link">depelos.com</h5>
                 </div>
-                <div class="autor__text col">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia rerum doloremque aperiam quo. Autem sit pariatur illo qui id quisquam distinctio iure, laudantium amet, vero repellendus consequuntur hic nam et. Lorem ipsum dolor sit
-                        amet consectetur adipisicing elit. Corporis autem nobis veritatis modi quaerat nihil vitae asperiores iure, ducimus labore, voluptates quo veniam enim reprehenderit sit libero cupiditate quis totam.</p>
+                <div class="autor-text col">
+                    <p>Fusce in eros purus. Fusce volutpat nisi purus, ac vehicula ipsum sollicitudin in. Praesent ultrices semper massa, eu pellentesque purus vehicula non. Praesent tincidunt convallis ipsum, quis convallis metus. </p>
                 </div>
-            </div>
+
         </section>
 
         <!--paginación-->
-        <section class="nav-pagination">
+        <section id="nav-pagination">
             <nav aria-label="...">
-                <ul class="pagination">
+                <ul class="pagination justify-content-center">
                     <li class="page-item disabled">
                         <a class="page-link" href="#">Anterior</a>
                     </li>
-                    <li class="page-item "><a class="page-link " href="# ">1</a></li>
+                    <li class="page-item"><a class="page-link " href="# ">1</a></li>
                     <li class="page-item active " aria-current="page ">
                         <a class="page-link " href="# ">2</a>
                     </li>
-                    <li class="page-item "><a class="page-link " href="# ">3</a></li>
-                    <li class="page-item ">
-                        <a class="page-link " href="# ">Siguiente</a>
+                    <li class="page-item"><a class="page-link " href="# ">3</a></li>
+                    <li class="page-item page-item_siguiente">
+                        <a class="page-link" href="# ">Siguiente</a>
                     </li>
                 </ul>
             </nav>
@@ -111,8 +122,8 @@
     </main>
 
     <!--inicio footer-->
-    <footer class="footer ">
-        <div class="footer__container bg-dark">
+    <footer id="footer ">
+        <div class="footer__container text-center bg-dark">
             <img src="assets\img\logo.png" alt="footer-logo">
         </div>
     </footer>
